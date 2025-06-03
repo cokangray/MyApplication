@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--绝对布局
+ 手机与pc段坐标原点都是在屏幕的左上角-->
+<AbsoluteLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="我是绝对布局"/>
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_x="300px"
+        android:layout_y="300px"
+        android:text="开始游戏"/>
+
+</AbsoluteLayout>
