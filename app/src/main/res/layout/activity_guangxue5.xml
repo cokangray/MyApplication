@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--在这里写代码，两个文本类型，textvie和edittext，
+     写内容显示到textvie中。-->
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="请输入用户名" />
+
+    <TextView
+        android:id="@+id/nameInfo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/aqua"
+        android:textSize="20dp" />
+
+</LinearLayout>
