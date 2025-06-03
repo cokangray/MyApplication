@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <!--增加几个按钮
+     @id/后面是按钮名字
+     layout_centerinparent：ture表示控件位于父控件的中央位置；
+     layput_centerHorizontak:ture,表示该控件位于父控件的居中位置
+     layout_centerVertucal:true,表示该控件置于父控件的垂直剧中位置
+     layout_above表示将该控件位于给定控件的上方-
+     layout_below表示该控件位于指定控件下方
+     layout_toleftof表示将该控件的右边缘与给定id的控件左边缘对齐
+     layout_torightof表示将该控件的左边缘与给定id的控件右边缘对齐-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_center"
+        android:layout_centerInParent="true"
+        android:text="中间"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_up"
+        android:layout_above="@id/bt_center"
+        android:layout_centerHorizontal="true"
+        android:text="向上"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_dowm"
+        android:layout_below="@id/bt_center"
+        android:layout_centerHorizontal="true"
+        android:text="向下"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_left"
+        android:layout_toLeftOf="@id/bt_center"
+        android:layout_centerVertical="true"
+        android:text="居左"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_right"
+        android:layout_toRightOf="@id/bt_center"
+        android:layout_centerVertical="true"
+        android:text="居右"/>
+
+
+</RelativeLayout>
